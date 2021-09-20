@@ -26,6 +26,8 @@ jobs:
           path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
+      - name: Grand execute permission for gradle
+        run: chmod +x gradlew
       - name: Cache Gradle packages
         uses: actions/cache@v1
         with:
