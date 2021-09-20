@@ -23,11 +23,13 @@ sonarqube {
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation("org.junit.jupiter:junit-jupiter:5.7.1")
+    testImplementation("com.github.hyperskill:hs-test:release-SNAPSHOT")
 
     // This dependency is used by the application.
     implementation("com.google.guava:guava:30.1-jre")
@@ -39,11 +41,9 @@ application {
 }
 
 tasks.test {
+    systemProperty("file.encoding", "utf-8")
+    outputs.upToDateWhen { false }
     // Use JUnit Platform for unit tests.
-    useJUnitPlatform()
+//    useJUnitPlatform()
 }
-//tasks.run {
-//    doFirst{
-//        Cinem
-//    }
-//}
+
