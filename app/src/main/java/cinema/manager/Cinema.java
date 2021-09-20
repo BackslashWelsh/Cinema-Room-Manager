@@ -1,4 +1,4 @@
-package cinema;
+package cinema.manager;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class Cinema {
 
         cinemaHall = new CinemaHall(rowsOfSeats, seatsInRow);
         menu();
-    }
+    }// !! trying run test with Cube, learn GitAction, maybe some Nana
 
     private void menu() {
         while (!exit) {
