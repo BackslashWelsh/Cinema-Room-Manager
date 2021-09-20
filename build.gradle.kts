@@ -37,7 +37,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass.set("cinema.manager.Cinema")
+    mainClass.set("app.cinema.manager.Cinema")
 }
 
 tasks.test {
