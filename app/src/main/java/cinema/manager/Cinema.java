@@ -20,6 +20,8 @@ public class Cinema {
         menu();
     }// !! trying to run test with Cube, learn GitAction, maybe some Nana
 
+    /// baagasasg
+
     private void menu() {
         while (!exit) {
             System.out.print("\n1. Show the seats\n" +
